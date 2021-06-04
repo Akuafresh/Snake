@@ -1,0 +1,20 @@
+import curses
+from random import radiant
+
+#constants
+
+WINDOW_WIDTH = 60
+WINDOW_HEIGHT = 20
+'''
+Number of blocks in window per line = WINDOW_WIDTH -2.
+Block x index ranges from 1 to WINDOW_WIDTH -2.
+Number of blocks in window per column = WINDOW_HEIGHT -2.
+Block y index ranges from 1 to WINDOW_HEIGHT -2.
+'''
+
+#setup window
+curses.initscr()
+win = curses.newin(WINOW_HEIGHT, WINDOW_WIDTH, 0,0) 
+win.keypad(1)
+curses.noecho()
+curses.
